@@ -1,0 +1,20 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.7.10'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.7.10'
+
+    id 'net.mamoe.mirai-console' version '2.12.2'
+}
+
+group = 'mi.yxz'
+version = '0.1.0'
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public'
+                'https://mvnrepository.com/artifact/org.quartz-scheduler/quartz'}
+    mavenCentral()
+}
+dependencies{
+    implementation group:'org.quartz-scheduler',
+            name: 'quartz',
+            version: '2.3.2'
+}
